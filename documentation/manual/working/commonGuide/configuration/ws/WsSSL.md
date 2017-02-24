@@ -3,7 +3,7 @@
 
 [[Play WS|ScalaWS]] allows you to set up HTTPS completely from a configuration file, without the need to write code.  It does this by layering the Java Secure Socket Extension (JSSE) with a configuration layer and with reasonable defaults.
 
-JDK 1.8 contains an implementation of JSSE which is [significantly more advanced](https://docs.oracle.com/javase/8/docs/technotes/guides/security/enhancements-8.html) than previous versions, and should be used if security is a priority.
+JDK 1.8 contains an implementation of JSSE which is [significantly more advanced](https://docs.oracle.com/javase/8/docs/technotes/guides/security/enhancements-8.html) than previous versions.  Releases of Play prior to 2.5 did not require Java 8, and so it was recommended to use Java 8 if security is a priority.  From Play 2.5 onwards, Java 8 is the [minimum supported version](https://playframework.com/documentation/2.5.x/JavaMigration25#Java-Migration-Guide) and so the more advanced JSSE implementation will be used by default.
 
 > **NOTE**: It is highly recommended (if not required) to use WS SSL with the
 unlimited strength java cryptography extension.  You can download the policy files from Oracle's website at [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 8 Download](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
